@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Node.js and HTML Example</title>
+</head>
+<body>
+  <h1>Hello Node.js and HTML!</h1>
+  <button onclick="getData()">Get Data</button>
+</body>
+<script>
+  async function getData() {
+    const response = await fetch('/data', {
+      method: 'GET',
+    });
+    const data = await response.json();
+    alert(data.message);
+  }
+</script>
+</html>
