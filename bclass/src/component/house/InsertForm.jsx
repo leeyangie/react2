@@ -6,6 +6,7 @@ const InsertForm = () => {
 
     const[kind, setKind] = useState('hanok');
     const sampleImg = useRef();
+    const useFile = useRef();
 
     const onChangeKind = (e) => {
         setKind(e.target.value);
@@ -94,7 +95,7 @@ const InsertForm = () => {
             />
             <button
             style={{backgroundColor : 'red'}}
-            onClick={onClickButton}>추가하기</button>
+            onClick={onSubmit}>추가하기</button>
         </div>
             <div style = {{width:'80%', margin : 'auto', height : '200px'}}>
                 <button disabled className="btn">이미지업로드</button>
