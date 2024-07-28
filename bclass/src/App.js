@@ -39,8 +39,11 @@ function App() {
       <Navibar/>
 
       <Routes>
-
-
+        <Route path="/" element={<Outline/>}/>
+        <Route path="/jsx" element={<Babel/>}/>
+        <Route path="/style" element={<StylePage/>}/>
+        <Route path="/component" element={<ComponentPage/>}/>
+        <Route path="/state" element={<Condition/>}/>
       </Routes>
      
 
