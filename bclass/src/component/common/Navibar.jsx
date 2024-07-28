@@ -1,7 +1,10 @@
 import style from 'styled-components';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App
 
 const Nav = styled.nav`
-    background-color : red;
+    background-color : #f38484;
     text-align : center;
     padding : 12px;
 `;
@@ -11,7 +14,6 @@ const Ul = styled.ul`
     list-style-type : none;
     margin : 0;
     padding : 0;
-    width : 130px;
     height : 80px;
 `;
 
@@ -19,12 +21,11 @@ const Li = styled.li`
 
     display : inline-block;
     margin-right : 30px;
-    width : 100%;
     height : 100%;
 `;
 
 const A = styled.a`
-    color : greenyellow;
+    color : #c3e3d8;
     text-decoration : none;
     padding : 7px;
     display : block;
@@ -43,6 +44,18 @@ const A = styled.a`
 
 const Navibar = () => {
 
+    return(
+        <Nav>
+            <Ul>
+                <Li><A>메인으로</A></Li>
+                <Li><A>JSX란?</A></Li>
+                <Li><A>스타일 부여방법</A></Li>
+                <Li><A>컴포넌트 나누기</A></Li>
+                <Li><A>상태와 Hook</A></Li>
+            </Ul>
+        </Nav>
+
+    );
 
 
 }
