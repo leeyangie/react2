@@ -1,15 +1,15 @@
 import style from 'styled-components';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App
+import App from '../../App';
 
-const Nav = styled.nav`
+const Nav = style.nav`
     background-color : #f38484;
     text-align : center;
     padding : 12px;
 `;
 
-const Ul = styled.ul`
+const Ul = style.ul`
 
     list-style-type : none;
     margin : 0;
@@ -17,14 +17,14 @@ const Ul = styled.ul`
     height : 80px;
 `;
 
-const Li = styled.li`
+const Li = style.li`
 
     display : inline-block;
     margin-right : 30px;
     height : 100%;
 `;
 
-const A = styled.a`
+const A = style.a`
     color : #c3e3d8;
     text-decoration : none;
     padding : 7px;

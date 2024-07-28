@@ -4,6 +4,8 @@ import StylePage from './component/chap01/StylePage';
 import Babel from './component/chap01/Babel';
 import ComponentPage from './component/chap02/ComponentPage.jsx';
 import Condition from './component/chap03/Condition.jsx';
+import Navibar from './component/common/Navibar.jsx';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 
 function App() {
@@ -35,6 +37,11 @@ function App() {
       */}     
 
       <Navibar/>
+
+      <Routes>
+
+
+      </Routes>
      
 
     </div>
