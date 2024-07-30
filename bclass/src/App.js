@@ -6,7 +6,9 @@ import ComponentPage from './component/chap02/ComponentPage.jsx';
 import Condition from './component/chap03/Condition.jsx';
 import Navibar from './component/common/Navibar.jsx';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-
+import Outline from './component/chap01/Outline.jsx';
+import Detail from './component/house/Detail.jsx';
+import House from './component/house/House.jsx';
 
 function App() {
 
@@ -23,7 +25,7 @@ function App() {
       //<ComponentPage/>
       }
 
-      {Condition()}
+
       
       {/*
       요청 URL에 따라서 다른 컴포넌트를 보여주고 싶음 
@@ -44,9 +46,9 @@ function App() {
         <Route path="/style" element={<StylePage/>}/>
         <Route path="/component" element={<ComponentPage/>}/>
         <Route path="/state" element={<Condition/>}/>
+        <Route path="/detail" element={<Detail/>}/>
+        <Route path="/product" element={<House />}/>
       </Routes>
-     
-
     </div>
   );
 }

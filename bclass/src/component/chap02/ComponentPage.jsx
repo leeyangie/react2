@@ -1,4 +1,4 @@
-
+import ResponseHome from "./ResponseHome";
 
 /*
  Componet를 나눠서 return 할때 주의점 
@@ -7,21 +7,32 @@
   
  */
 
+ 
 
 
 const ComponentPage = () => {
 
-const Home = () => {
-    return (
+    /* 
+    컴포넌트를 정의 할 때는 반드시 대문자로 시작해야함!
+    리액트는 소문자로 시작하는 컴포넌트는 컴포넌트가 아닌 DOM요소로 인식함. 
+    const divEl = () => {
+        return (
+            <div>함수형으로 정의한 컴포넌트</div>
+        );
+    };
+    */
 
-        <div className="home">
-            <img src="https://a0.muscache.com/im/pictures/f73781e9-ce80-41c0-8d7d-50e9486b9292.jpg?im_w=720"></img>
-            <h4>홍천</h4>
-            <p>신규</p>
-        </div>
+    const Home = () => {
+        return (
 
-    )
-};
+            <div className="home">
+                <img src="https://a0.muscache.com/im/pictures/f73781e9-ce80-41c0-8d7d-50e9486b9292.jpg?im_w=720"></img>
+                <h4>홍천</h4>
+                <p>신규</p>
+            </div>
+
+        )
+    };
 
     /*
     DB - AJAX - API 요청 
@@ -49,7 +60,7 @@ const Home = () => {
     };
 
     const homes = [homeObj, homeObj2, homeObj3];
-
+/*
     const ResponseHome = props => {
         console.log(props);
         const home=props.home;
@@ -63,6 +74,7 @@ const Home = () => {
         )
 
     };
+    */
 
     return (
         <>

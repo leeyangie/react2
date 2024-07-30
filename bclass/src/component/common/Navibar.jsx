@@ -1,6 +1,6 @@
 import style from 'styled-components';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import { useNavigate } from 'react-router-dom';
+import '../../index.css';
 import App from '../../App';
 
 const Nav = style.nav`
@@ -44,14 +44,42 @@ const A = style.a`
 
 const Navibar = () => {
 
+    const navi = useNavigate();
+
+    const toMain = () => {
+        navi('/');
+    };
+
+    const toJsx = () => {
+        navi('/jsx');
+    };
+
+    const toStyle = () => {
+        navi('/style');
+    };
+
+    const toComponent = () => {
+        navi('/component');
+    };
+
+    const toState = () => {
+        navi('/state');
+    };
+
+    const toProduct = () => {
+        navi('/product')
+    };
+
     return(
         <Nav>
             <Ul>
-                <Li><A>메인으로</A></Li>
-                <Li><A>JSX란?</A></Li>
-                <Li><A>스타일 부여방법</A></Li>
-                <Li><A>컴포넌트 나누기</A></Li>
-                <Li><A>상태와 Hook</A></Li>
+                <Li><A onClick={toMain}>메인으로</A></Li>
+                <Li><A onClick={toJsx}>JSX란?</A></Li>
+                <Li><A onClick={toStyle}>스타일 부여방법</A></Li>
+                <Li><A onClick={toComponent}>컴포넌트 나누기</A></Li>
+                <Li><A onClick={toState}>상태와 Hook</A></Li>
+                <Li><A onClick={toProduct}>입장하러가기</A></Li>
+                
             </Ul>
         </Nav>
 
